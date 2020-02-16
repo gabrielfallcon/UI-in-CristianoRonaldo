@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 
-/* colors  
-#
-primaria :#2f4f4f;
-seguncaria #4f6a6a;
-terciaria: #dadfdf; */
-
 *{
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
@@ -13,32 +7,6 @@ terciaria: #dadfdf; */
 body {
     margin: 0;
     padding: 0;
-}
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.content {
-    width: 35%;
-    height: 100%;
-    background-image: url('../../assets/banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.content nav img {
-    width: 100px;
-    padding: 5px;
-}
-
-main{
-    width: 450px;
-    height: 450px;
 }
 
 .btn {
@@ -61,76 +29,6 @@ main{
     margin-left: 55%;
 }
 
-
-.redondo {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    background-color: transparent;
-   
-    position: relative;
-}
-
-.content main img {
-    width: 500px;
-    position: absolute;
-    margin-top: -32%;
-    margin-left: 23%;
-    margin-top: 10%;
-    
-}
-
-.content1 {
-    width: 65%;
-    height: 100vh;
-    background-image: linear-gradient(to right, black, #F74326);
-    color: #0d1212;
-}
-
-.content1 nav {
-    width: 100%;
-    height: 60px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 5px 2px 20px #0d1212;
-    color: #F74326;
-    margin: 0;
-}
-
-.content1 nav ul {
-    width: 40%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-.content1 nav ul li{
-    cursor: pointer;
-}
-
-.content1 nav ul li:hover{
-    cursor: pointer;
-    border-bottom: 3px solid #F74326;
-
-}
-
-.carrinho {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-
-}
-.search  {
-    cursor: pointer;
-}
-
 .menu {
     width: 25%;
     height: 100%;
@@ -141,102 +39,9 @@ main{
     align-items: center;
     cursor: pointer;
 }
-section {
-    width: 58%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    min-height: 400px;
-    margin-top: 20%;
-    margin-left: 40%;
-    font-weight: 400;
-}
-
-section h1 {
-    font-weight: 500;
-    font-size: 40pt;
-    margin: 0;
-    font-family: 'Julius Sans One', sans-serif;
-    color: #000;
-}
-
-section p {
-    font-weight: 400;
-}
-
-.btnCompra{
-    padding: 15px;
-    width: 180px;
-    border: none;
-    background-color: black;
-    color: white;
-    /* box-shadow: 5px 2px 20px #999999; */
-    transition: .4s;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-}
-
-.btnCompra:hover {
-    cursor: pointer;
-}
-
-
-
-.btnCompra::before{
-    content: '';
-    width: 180px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    position: absolute;
-    margin-top: 32px;
-    margin-left: -28px;
-}
-
-
-.photo {
-    width: 250px;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.photo img {
-    width: 50px;
-    transition: .1s;
-}
-
-.photo img:hover{
-    width: 70px;
-    cursor: pointer;
-}
 
 @media(max-width: 645px) {
-    .container {
-        flex-direction: column;
-    }
 
-    .content {
-        width: 100%;
-        min-height: 700px;
-        background-size: cover;
-    }
-    .redondo {
-        margin-top: 150%;
-        
-    }
-    main {
-        width: 95%;
-        margin-top: 220%;
-        display: flex;
-        align-items: flex-end;
-    }
-    .content main img {
-        width: 300px;
-        height: auto;
-        margin-top: 0;
-        margin-left: 10%;
-    }
     .prev {
         margin-top: -30%;
         margin-left: -5px;
@@ -244,37 +49,6 @@ section p {
     .next {
         margin-top: -30%;
         margin-left: 85%;
-    }
-
-    /* ---------------------------- */
-
-    .content1 {
-        width: 100%;
-        height: 100%;
-        background-color: #000000;
-        background-image: none;
-    }
-
-    .content1 nav{
-        display: none;
-    }
-
-    section {
-        width: 90vw;
-        height: 100vh;
-        color: #fff;
-        justify-content: start;
-        align-items: center;
-        margin: 0;
-    }
-
-    section h1 {
-        color: #fff;
-        width: 80%;
-    }
-
-    .btnCompra {
-        border: 1px solid #fff;
     }
 
 }
